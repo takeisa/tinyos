@@ -2,8 +2,6 @@ open Core.Std
 
 let file_name = "hankaku.txt"
 
-exception Illegal_format of string
-
 let is_skip_line line =
   let line' = String.strip line in
   line' = "" || String.get line 0 = '#'
